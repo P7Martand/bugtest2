@@ -86,7 +86,9 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Facilitates the retrieval of data from a database, enabling access to essential information for analysis.",
+        "autoUpdateComment" : true
       },
       "ports" : {
         "inputs" : [ ],
@@ -109,5 +111,54 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  }
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.3xU6SWVeJaSwiiiYiztmF$$LDP32hKx8-3Zgo18R1Oze.properties.secretUsername",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Username cannot be empty [Location]",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.3xU6SWVeJaSwiiiYiztmF$$LDP32hKx8-3Zgo18R1Oze.properties.secretJdbcUrl",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "JDBC URL cannot be empty [Location]",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.3xU6SWVeJaSwiiiYiztmF$$LDP32hKx8-3Zgo18R1Oze.properties.driver",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "JDBC Driver cannot be empty [Properties]",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  } ]
 }

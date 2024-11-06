@@ -8,11 +8,11 @@ from pipelinetest.functions import *
 
 def newDataset(spark: SparkSession) -> DataFrame:
     return spark.read\
-        .schema(
-          StructType([
-            StructField("col1", StringType(), True), StructField("customer_id", StringType(), True), StructField("c_config", StringType(), True)
-        ])
-        )\
-        .option("header", True)\
-        .option("sep", ",")\
-        .csv("dbfs:/tmp/auomation_csv/single_file.csv")
+        .format("jdbc")\
+        .option("url", "")\
+        .option("user", "")\
+        .option("password", "")\
+        .option("dbtable", None)\
+        .option("pushDownPredicate", True)\
+        .option("driver", "")\
+        .load()
