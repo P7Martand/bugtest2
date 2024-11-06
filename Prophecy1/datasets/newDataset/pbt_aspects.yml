@@ -1,0 +1,25 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: col1
+    type: string
+    nullable: true
+    metadata:
+      description: An additional identifier or attribute related to the customer.
+      mappings: []
+      tags: []
+  - name: customer_id
+    type: string
+    nullable: true
+    metadata:
+      description: Unique identifier for the customer
+      mappings: []
+      tags: []
+  - name: c_config
+    type: string
+    nullable: true
+    metadata:
+      description: Configuration details related to the customer
+      mappings: []
+      tags: []
